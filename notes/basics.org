@@ -27,7 +27,7 @@
 **** 格式化
 **** 代码注释
 **** 代码跳转
-**** magit
+**** magit/treemacs-tree-mode
 
 *** 多光标模式
 
