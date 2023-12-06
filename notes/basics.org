@@ -2,47 +2,77 @@
 
 ** 常用操作
 
-*** 打开文件 [C-x C-f]
-*** 保存文件 [C-x C-s][C-x s]
-*** 撤销操作 [C-/][C-shift-/]
-*** 复制
-*** 粘贴 [C-y][M-y]
-*** 删除
-*** 关闭 Emacs [C-x C-c]
-*** 文件顶部 [C-<]
-*** 文件底部 [C->]
+*** 软件
+**** 关闭 Emacs [C-x C-c]
+
+
+*** 项目
+**** 切换项目 [M-m p p]
+**** treemacs侧边菜单 [M-m p t]
+
+*** 窗口
+**** 窗口切换 [C-x o][M-1/2/3...]
+**** 窗口拆分
+***** 水平窗口 [C-x 2]
+***** 垂直窗口 [C-x 3]
+***** 关闭窗口 [C-x 0]
+***** 最大化窗口 [C-x 1]
+
+*** 文件
+**** 打开文件 [C-x C-f]
+**** 保存文件 [C-x C-s][C-x s]
+**** 文件选择
+***** buffer选择 [C-x b]
+***** buffer目录 [C-x d]
+***** buffer目录选择[C-x C-j]
+
+*** 文本
+**** 撤销操作 [C-/][C-shift-/]
+**** 复制
+**** 粘贴 [C-y][M-y]
+**** 删除
+**** 文件顶部 [C-<]
+**** 文件底部 [C->]
 
 *** 查找替换
 **** [C-s][C-shift-s]
 **** [M-x replace-string]
 
-*** 文件选择
-**** buffer选择 [C-x b]
-**** buffer目录 [C-x d]
-**** buffer目录选择[C-x C-j]
-**** treemacs侧边栏 [M-m p t]
-
 *** 代码
-**** 缩进
-**** 格式化
+**** 缩进 [M-i][M-m x Tab]
+**** 交换行 [M-m x J/K] => j(down)/k(up)/h(left)/l(right)
+**** 大小写切换 [M-u][M-l]
+**** 格式化 [M-x j =]
 **** 代码注释
+***** 注释当前行 [C-x C-;][M-m c-KEY]
+***** 行尾添加注释 [M-;]
 **** 代码跳转
-**** magit/treemacs-tree-mode
+**** magit
+***** 配置: .spacemacs => dotspacemacs-configuration-layer 添加 `git` layer
+***** git 相关操作键位 [M-m g KEY]
+****** open magit status window [M-m g s]
+****** open a commit message buffer [c c]
+****** stage all files [S]
+****** push to tracked branch [P u]
+***** 初始化仓库信息/分支/提交流程...
 
 *** 多光标模式
+**** C-> (mc/mark-next-like-this)
+**** C-< (mc/mark-previous-like-this)
+**** C-c C-< (mc/mark-all-like-this)
 
-*** .spacemacs 配置文件
-**** 打开配置文件 [M-m f e d]
-**** 更新配置 [M-m f e R]
-**** 编辑模式(Emacs/Evil/Hybrid) [dotspacemacs-editing-style 'emacs]
-**** 显示行号(nil/visual/relative)
-***** 相对行号 [display-line-numbers-mode 'relative]
-***** 可视化行号 [display-line-numbers-mode 'visual]
 
 ** Org-Mode
 *** 创建列表项 [C-Enter]
 *** 创建TODO项 [C-Shift-Enter]
 *** 移动列表项 [M-上下方向键]
 *** 交换临近列表项排序 [M-shift-方向键]
+*** 切换列表项状态 [shift-左/右方向键]
 
-
+** .spacemacs 配置文件
+*** 打开配置文件 [M-m f e d]
+*** 更新配置 [M-m f e R]
+*** 编辑模式(Emacs/Evil/Hybrid) [dotspacemacs-editing-style 'emacs]
+*** 显示行号(nil/visual/relative)
+**** 相对行号 [display-line-numbers-mode 'relative]
+**** 可视化行号 [display-line-numbers-mode 'visual]
